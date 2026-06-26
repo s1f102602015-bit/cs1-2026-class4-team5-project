@@ -1,0 +1,98 @@
+/* 全体のリセットと基本設定 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f7;
+    color: #333333;
+}
+
+/* 外側の白いコンテナボックス */
+.container {
+    display: flex;
+    width: 850px;
+    min-height: 450px;
+    background-color: #ffffff;
+    border: 1px solid #d1d1d6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 左側：グレーの背景エリア */
+.left-panel {
+    width: 240px;
+    background-color: #c7c7cc; /* 指定のグレー背景色 */
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 上中下に綺麗に配置 */
+    border-right: 1px solid #d1d1d6;
+}
+
+/* 左パネル内の文字スタイル */
+.left-panel .top {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* 指定された画像を配置するエリア */
+.left-panel .middle-image {
+    width: 100%;
+    height: 200px; /* 写真の高さ */
+    margin: 15px 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.left-panel .middle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 枠内に綺麗に収める */
+}
+
+.left-panel .bottom {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* 右側：テキスト情報エリア */
+.right-panel {
+    flex: 1; /* 残りの横幅をすべて使う */
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* メンバーリストのスタイル */
+.member-list {
+    list-style: none; /* デフォルトの点を消す */
+    margin-bottom: 35px;
+}
+
+.member-list li {
+    font-size: 24px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+/* キタニタツヤ（ベース）の文字色を少し薄く */
+.member-list li.support {
+    color: #777777;
+}
+
+/* 紹介文のスタイル */
+.description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444444;
+}
