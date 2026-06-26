@@ -1,0 +1,13 @@
+.big-img{
+    width: 300px;
+    height: :450px;
+    display:block;
+    float: right;
+}
+.small-img{
+    width: 50px;
+    height: :50px;
+    display:block;
+    float: left;
+}
+
